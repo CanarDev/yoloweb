@@ -10,21 +10,29 @@ export default function Home() {
               <div className="group-hover/item:visible invisible w-20 h-full overflow-hidden">
                 <VerticalInfiniteSlider src="/nyancatgif.gif" direction="Vertic"/>
               </div>
+
+              {/* content left */}
                 <div className="flex flex-col w-[calc(100%-80px)] h-full">
                   <div className="group-hover/item:visible invisible overflow-hidden"><SliderComponent src="/nyancatgif.gif" direction={'LeftToRight'}/></div>
-                    <div className="h-full w-full relative group/item cursor-pointer transition ease-in-out delay-50 bg-yellow hover:bg-[#e6d251]"><Image  src="/OriginalNyan.webp"
-                      className=" absolute left-[50%] ml-[-123px] translate-y-[-60px] top-[50%] object-cover sepia cursor-pointer brightness-100 hover:brightness-90 "
-                      width={200}
-                      height={200}
-                      alt="Picture of yoloweb"
-                      />
-                      <div className=" group-hover/item:visible invisible">
-                        <div class="absolute left-[49%] top-10 scroll-msg-container h-8 w-3">
+                  {/* main */}
+                    <div className="h-full w-full flex flex-col justify-between group/item cursor-pointer transition ease-in-out delay-50 bg-yellow hover:bg-[#e6d251]">
+                     
+                      <div className="mt-10 group-hover/item:visible flex flex-col items-center">
+                        <div class="scroll-msg-container h-full w-3">
                           <div class="scroll-msg-inner border-4 border-dark-blue">
                             <div class="scroll-up-msg-wheel bg-dark-blue"></div>
                           </div>
                         </div>
-                        <p className=" right-0 absolute text-center w-full top-32 italic text-dark-blue">Naviguez vers le haut pour yolo web</p>
+                        <p className="  text-center w-full mt-4 italic text-dark-blue">Naviguez vers le haut pour yolo web</p>
+                      </div>
+
+                      <h1 className=" text-shadow-title drop-shadow-md text-center text-8xl font-bold text-dark-blue">NAVIGATE</h1>
+                      <div className="mb-10 w-full h-auto flex items-center justify-center"><Image  src="/blueyellonyan.png"
+                      className=" object-cover  "
+                      width={200}
+                      height={200}
+                      alt="Picture of yoloweb"
+                      />
                       </div>
                     </div>
                   <div className="group-hover/item:visible overflow-hidden invisible"><SliderComponent src="/nyancatgif.gif" direction={'RightToLeft'}/></div>
@@ -43,31 +51,34 @@ export default function Home() {
 
               <div className="h-full flex flex-col w-[calc(100%-80px)] relative cursor-pointer bg-dark-blue group/item transition ease-in-out delay-50 hover:bg-[#0b487d]">
                 <div className="group-hover/item:visible overflow-hidden invisible"><SliderComponent src="/illuminablue.png" direction={'LeftToRight'}/></div>
-
-                  <Image src="/illuminati.png"
-                  className=" absolute left-[50%] opacity-70 ml-[-175px] translate-y-[-175px] top-[50%] object-cover cursor-pointer brightness-100 hover:brightness-90 "
+                  <div className="h-full flex flex-col justify-between">
+                  <div className="mt-[-40px] w-full h-auto flex items-center justify-center"><Image src="/yelluminati.png"
+                  className=" object-cover "
                   width={350}
                   height={350}
                   alt="Picture of yoloweb"
-                  />
+                  /></div>
                   
-                
-                  <div className=" group-hover/item:visible invisible h-full"><p className="absolute text-center w-full bottom-36 italic text-yellow">Naviguez vers le bas pour le monde des complots</p>
-                    <div class="absolute left-[49%] bottom-28 scroll-msg-container h-8 w-3">
+                  <h1 className=" text-shadow-title drop-shadow-md text-center text-8xl font-bold text-yellow">THROUGH WEBIVERSES</h1>
+
+                  <div className="flex flex-col items-center group-hover/item:visible invisible mb-10"><p className="text-center w-full italic text-yellow mb-4">Naviguez vers le bas pour le monde des complots</p>
+                    <div class="scroll-msg-container h-auto w-3">
                       <div class="scroll-msg-inner border-4 border-yellow">
                         <div class="scroll-msg-wheel bg-yellow"></div>
                       </div>
                     </div>
                   </div>
-                  <div className="group-hover/item:visible overflow-hidden invisible"><SliderComponent src="/illuminablue.png" direction={'RightToLeft'}/></div>
+                 
               </div>
-              
+              <div className="group-hover/item:visible overflow-hidden invisible"><SliderComponent src="/illuminablue.png" direction={'RightToLeft'}/></div>
+              </div>
               <div className="group-hover/item:visible invisible w-20 h-full overflow-hidden">
                 <VerticalInfiniteSlider src="/illuminablue.png" direction="VerticReverse"/>
               </div>
+
           </div>
+          
           </div>
-          <h1 className="text-shadow-title drop-shadow-md absolute top-[50%] translate-y-[-50%] text-center text-9xl font-bold text-dark-blue">NAVIGATE THROUGH UNIVERSES</h1>
       </section>
      
     </main>
