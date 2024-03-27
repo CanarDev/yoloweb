@@ -15,8 +15,18 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+      'green-reptilian': '#009473',
     },
     extend: {
+      fontFamily: {
+        workbench : ['"Workbench", sans-serif', {
+          fontFeatureSettings: '"ss01"',
+          fontVariationSettings: '"bled" 0.1, "scan" 0.1',
+        }],
+
+
+        linefont : ['linefont', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

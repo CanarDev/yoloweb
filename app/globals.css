@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Linefont:wdth,wght@25..200,4..1000&family=Workbench:BLED,SCAN@0..100,-53..100&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +9,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+
+  --reptilian-font-bleed: 0.1em;
+  --reptilian-font-scanline: 0.1em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +37,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Reptilian slider */
+.reptilian-slider {
+  --divider-width: 4px;
+  --divider-color: #F5DF4D;
+  --default-handle-opacity: 0;
 }
