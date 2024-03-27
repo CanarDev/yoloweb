@@ -1,0 +1,100 @@
+
+/* ROWLING BANNER */
+.slidesVertic {
+    width: 60px;
+    height: 150%;
+  /*    margin-bottom: 80px;*/
+  }
+  
+  /*Removes weird margin between images*/
+  .slidesVertic img{
+    margin-top: -4px;
+  }
+  .slidesVertic {
+    height: 2500px;
+    width: 80px;
+  /*    margin-bottom: 80px;*/
+  }
+  
+  /*Removes weird margin between images*/
+  .slidesVertic img{
+    margin-top: -4px;
+  }
+  
+  /*keyframe animations*/
+  .firstVertic {
+    -webkit-animation: bannermoveVertic 30s linear infinite;
+       -moz-animation: bannermoveVertic 30s linear infinite;
+        -ms-animation: bannermoveVertic 30s linear infinite;
+         -o-animation: bannermoveVertic 30s linear infinite;
+            animation: bannermoveVertic 15s linear infinite;
+  }
+  
+  @keyframes bannermoveVertic {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -2500px;
+  }
+  
+  }
+  
+  @-moz-keyframes bannermoveVertic {
+  0% {
+   margin-top: 0px;
+  }
+  100% {
+   margin-top: -3000px;
+  }
+  
+  }
+  
+  @-webkit-keyframes bannermoveVertic {
+  0% {
+   margin-top: 0px;
+  }
+  100% {
+   margin-top: -3000px;
+  }
+  
+  }
+  
+  @-ms-keyframes bannermoveVertic {
+  0% {
+   margin-top: 0px;
+  }
+  100% {
+   margin-top: -3000px;
+  }
+  
+  }
+  
+  @-o-keyframes bannermoveVertic {
+  0% {
+   margin-top: 0px;
+  }
+  100% {
+   margin-top: -3000px;
+  }
+  }
+
+
+   /*keyframe animations*/
+   .firstVerticReverse {
+    -webkit-animation: bannermoveVertic 30s linear infinite;
+       -moz-animation: bannermoveVertic 30s linear infinite;
+        -ms-animation: bannermoveVertic 30s linear infinite;
+         -o-animation: bannermoveVertic 30s linear infinite;
+            animation: bannermoveVerticReverse 15s linear infinite;
+  }
+  
+  @keyframes bannermoveVerticReverse {
+  0% {
+    margin-top: -2500px;
+  }
+  100% {
+    margin-top: -0px;
+  }
+  
+  }
