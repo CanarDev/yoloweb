@@ -53,12 +53,12 @@ export default function Mlg() {
 
   return (
     <main ref={gameContainerRef} id="mlg-section" className="overflow-hidden h-screen relative z-[1]">
-      <Image src="/mlg/snoop_dogg.gif" alt="Snoop Dogg" className='h-[20rem] w-[10rem] absolute inset-x-0 bottom-0 z-[1]' width={500} height={200}/>
-      <div class="flex justify-center h-full z-[1] relative items-center">
+      <Image src="/mlg/snoop_dogg.gif" alt="Snoop Dogg" className='h-[20rem] w-[10rem] absolute inset-x-0 bottom-0 z-[1]' width={500} height={200} unoptimized={true}/>
+      <div className="flex justify-center h-full z-[1] relative items-center">
         <Image src="/mlg/mlg_logo.png" alt="MLG Logo" className='h-[10rem] w-[20rem] z-[1]' width={500} height={200}/>
       </div>
-      <Image src="/mlg/mlg_grenouille.gif" alt="MLG Dance" className='h-[20rem] w-[10rem] absolute bottom-0 right-1/2 z-[1]' width={500} height={200}/>
-      <Image src="/mlg/mlg_dance.gif" alt="MLG Dance" className='h-[20rem] w-[10rem] absolute bottom-0 right-0 z-[1]' width={500} height={200}/>
+      <Image src="/mlg/mlg_grenouille.gif" alt="MLG Dance" className='h-[20rem] w-[10rem] absolute bottom-0 right-1/2 z-[1]' width={500} height={200} unoptimized={true}/>
+      <Image src="/mlg/mlg_dance.gif" alt="MLG Dance" className='h-[20rem] w-[10rem] absolute bottom-0 right-0 z-[1]' width={500} height={200} unoptimized={true}/>
     </main>
   );
 }
@@ -157,6 +157,7 @@ function showExplosions(container) {
     gif.style.transform = n.translate;
     gif.style.width = n.width;
     gif.style.zIndex = '1';
+    gif.unoptimized = true;
     container.appendChild(gif);
 
     setTimeout(() => {
