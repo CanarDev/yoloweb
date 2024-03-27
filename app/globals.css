@@ -53,3 +53,14 @@ body {
   color: transparent;
 }
 
+/* Augmentez la durée de la transition pour une animation plus lente */
+.text-hover:hover + .image-animate {
+  transform: scale(15);
+  transition: transform 5s ease; 
+}
+
+.image-animate {
+  transition: transform 5s ease; 
+  transform: scale(1); 
+}
+
