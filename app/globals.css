@@ -31,3 +31,36 @@ body {
     text-wrap: balance;
   }
 }
+
+.pageContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #009473, #5F4B8B);
+}
+
+.main {
+  text-align: center;
+}
+
+.gradientText {
+  font-size: 72px;
+  background: linear-gradient(to bottom, #009473, #F5DF4D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Augmentez la durée de la transition pour une animation plus lente */
+.text-hover:hover + .image-animate {
+  transform: scale(15);
+  transition: transform 5s ease; 
+}
+
+.image-animate {
+  transition: transform 5s ease; 
+  transform: scale(1); 
+}
+
