@@ -14,21 +14,21 @@ export default function Home() {
   return (
     <main className="scroll-container">
 
-      {/* SKYBLOG */}
-      <section id="1" className="section ">
-        <Skyblog/>
-      </section>
-      {/* ACCUEIL */}
-       <section id="home" className="snap-start h-screen ">
-         <Accueil />
-      </section> 
+    {/* SKYBLOG */}
+    <section id="1" className="snap-start h-screen flex w-full ">
+      <Skyblog/>
+    </section>
+    {/* ACCUEIL */}
+     <section id="home" className="snap-start h-screen flex relative w-full ">
+       <Accueil />
+    </section> 
 
-      <section className="section "
-      >
-             <Illuminati /> 
+    <section className="snap-start overflow-hidden h-screen flex w-full "
+    >
+           <Illuminati /> 
 
-      </section>
-     
-    </main>
+    </section>
+   
+  </main>
   );
 }

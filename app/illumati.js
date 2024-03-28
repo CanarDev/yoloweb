@@ -76,10 +76,10 @@ interactiveLogoRef.current.addEventListener('mouseleave', () => {
     Matter.Render.run(render);
 
     return () => {
-      document.body.style.overflow = ''; // Restaurer le défilement
+      /* document.body.style.overflow = ''; */ // Restaurer le défilement
       Matter.Render.stop(render);
-      /* Matter.World.clear(engine.world); */
-      /* Matter.Engine.clear(engine); */
+      Matter.World.clear(engine.world); 
+      Matter.Engine.clear(engine); 
       render.canvas.remove();
     };
   }, []);
