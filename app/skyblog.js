@@ -14,7 +14,7 @@ export default function Skyblog() {
                         </div>
                         <div className="text-[#F5DF4D] w-1/2 text-justify">
                             Description: <br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Doggo ipsum heckin snoot heckin good boys heckin you are doin me a concern pats, mlem pupper clouds long bois.  Borkdrive extremely cuuuuuute clouds super chub, sub woofer. 
                         </div>
                     </div>
                 </div>
