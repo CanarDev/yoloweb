@@ -1,8 +1,9 @@
 import Image from "next/image";
+import HoverVideoImage from "./hoverVideoImage";
 
 export default function Skyblog() {
     return (
-        <main className="h-screen bg-[#6667AB] flex p-10 flex-col gap-2">
+        <main className="h-screen bg-[url('/skyblog/fond.png')] bg-cover flex p-10 flex-col gap-2">
             <h1 className="text-center text-5xl text-[#F5DF4D]">Skyblog</h1>
             <div className="flex">
                 <div className="w-1/4 bg-[#BB2649] m-2 flex flex-col rounded-lg">
@@ -66,28 +67,16 @@ export default function Skyblog() {
                     <h2 className="text-[#F5DF4D] text-3xl text-center mt-5">Amis</h2>
                     <div className="flex flex-col">
                         <div className="m-2 flex gap-1">
-                            <div className="w-1/2">
-                                <Image src="/skyblog/thekairi.png" alt="Description de l'image" width={200} height={200}/>
-                            </div>
-                            <div className="w-1/2">
-                                <Image src="/skyblog/squeezie.png" alt="Description de l'image" width={200} height={200}/>
-                            </div>
+                            <HoverVideoImage srcImage="/skyblog/thekairi.png" srcVideo="/skyblog/thekairi.mp4" alt="TheKairi" />
+                            <HoverVideoImage srcImage="/skyblog/squeezie.png" srcVideo="/skyblog/squeezie.mp4" alt="Squeezie" />
                         </div>
                         <div className="m-2 flex gap-1">
-                            <div className="w-1/2">
-                                <Image src="/skyblog/antoine_daniel.png" alt="Description de l'image" width={200} height={200}/>
-                            </div>
-                            <div className="w-1/2">
-                                <Image src="/skyblog/cyprien.png" alt="Description de l'image" width={200} height={200}/>
-                            </div>
+                            <HoverVideoImage srcImage="/skyblog/antoine_daniel.png" srcVideo="/skyblog/antoine_daniel.mp4" alt="Antoine Daniel" />
+                            <HoverVideoImage srcImage="/skyblog/cyprien.png" srcVideo="/skyblog/cyprien.mp4" alt="Cyprien" />
                         </div>
                         <div className="m-2 flex gap-1">
-                            <div className="w-1/2">
-                                <Image src="/skyblog/ibratv.png" alt="Description de l'image" width={200} height={200}/>
-                            </div>
-                            <div className="w-1/2">
-                                <Image src="/skyblog/misterv.png" alt="Description de l'image" width={200} height={200}/>
-                            </div>
+                            <HoverVideoImage srcImage="/skyblog/ibratv.png" srcVideo="/skyblog/ibratv.mp4" alt="Ibratv" />
+                            <HoverVideoImage srcImage="/skyblog/misterv.png" srcVideo="/skyblog/misterv.mp4" alt="Mister V" />
                         </div>
                     </div>
                 </div>
