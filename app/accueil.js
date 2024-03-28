@@ -3,8 +3,8 @@
 
 
 import Image from 'next/image'
-import SliderComponent from './Components/SliderComponent/SliderComponent';
-import VerticalInfiniteSlider from './Components/VerticalInfiniteSlider/VerticalInfiniteSlider';
+import SliderComponent from './components/SliderComponent/SliderComponent';
+import VerticalInfiniteSlider from './components/VerticalInfiniteSlider/VerticalInfiniteSlider';
 
 
 export default function Accueil() {

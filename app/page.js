@@ -6,7 +6,7 @@ import Head from 'next/head';
 import Illuminati from './illumati';
 import Accueil from "./accueil";
 import Mlg from "./mlg";
-import Reptilians from './Components/reptilians';
+import Reptilians from './components/reptilians';
 /* export default function MaPage() {
   return (
     <>
