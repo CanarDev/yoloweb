@@ -12,10 +12,10 @@ import Accueil from "./accueil";
 
 export default function Home() {
   return (
-    <main className="flex h-auto flex-col snap-mandatory snap-y">
+    <main className="flex h-auto flex-col snap-mandatory snap-y scroll-container">
 
       {/* SKYBLOG */}
-      <section id="1" className=" snap-start h-screen flex w-full ">
+      <section id="1" className="section snap-start h-screen flex w-full ">
         <Skyblog/>
       </section>
       {/* ACCUEIL */}
@@ -23,7 +23,7 @@ export default function Home() {
          <Accueil />
       </section> */}
 
-      <section className="snap-start overflow-hidden h-screen flex w-full "
+      <section className="section snap-start overflow-hidden h-screen flex w-full "
       >
              <Illuminati /> 
 

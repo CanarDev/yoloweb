@@ -46,7 +46,6 @@ interactiveLogoRef.current.addEventListener('mouseleave', () => {
     );
 
     // Initialiser Matter.js pour la zone entière de la page sans ajouter de défilement
-    document.body.style.overflow = 'hidden'; // Empêcher le défilement global
     const engine = Matter.Engine.create({ gravity: { y: 0 } });
     engineRef.current = engine;
 
@@ -79,8 +78,8 @@ interactiveLogoRef.current.addEventListener('mouseleave', () => {
     return () => {
       document.body.style.overflow = ''; // Restaurer le défilement
       Matter.Render.stop(render);
-      Matter.World.clear(engine.world);
-      Matter.Engine.clear(engine);
+      /* Matter.World.clear(engine.world); */
+      /* Matter.Engine.clear(engine); */
       render.canvas.remove();
     };
   }, []);
@@ -107,7 +106,7 @@ interactiveLogoRef.current.addEventListener('mouseleave', () => {
   
 
   return (
-    <div className="h-screen bg-gradient-to-b from-[#009473] to-[#5F4B8B] p-8 relative overflow-visible" ref={sceneRef}>
+    <div className="h-full w-full bg-gradient-to-b from-[#009473] to-[#5F4B8B] p-8 relative overflow-visible" ref={sceneRef}>
       <Head>
         <title>Page Dégradé</title>
       </Head>
