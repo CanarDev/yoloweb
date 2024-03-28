@@ -2,6 +2,8 @@ import Skyblog from "./skyblog";
 import Head from 'next/head';
 import Illuminati from './illumati';
 import Accueil from "./accueil";
+import Mlg from "./mlg";
+
 /* export default function MaPage() {
   return (
     <>
@@ -18,6 +20,11 @@ export default function Home() {
     <section id="1" className="snap-start h-screen flex w-full ">
       <Skyblog/>
     </section>
+    
+    <section id="2" className="snap-start h-screen ">
+      <Mlg />
+    </section>
+
     {/* ACCUEIL */}
      <section id="home" className="snap-start h-screen flex relative w-full ">
        <Accueil />

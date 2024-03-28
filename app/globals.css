@@ -202,3 +202,13 @@
   -o-animation: mouse-scroll-up 0.9s infinite;
   animation: mouse-scroll-up 0.9s infinite;
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+#mlg-section {
+  background: linear-gradient(to right bottom, #F5DF4D, #DD4124, #88B04B, #91A8D0);
+}
