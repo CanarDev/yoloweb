@@ -1,0 +1,139 @@
+
+/* ROWLING BANNER */
+.slides {
+    height: 60px;
+    width: 150%;
+  /*    margin-bottom: 80px;*/
+  }
+  
+  /*Removes weird margin between images*/
+  .slides img{
+    margin-left: -4px;
+  }
+  .slides {
+    height: 60px;
+    width: 2500px;
+  /*    margin-bottom: 80px;*/
+  }
+  
+  /*Removes weird margin between images*/
+  .slides img{
+    margin-left: -4px;
+  }
+  
+  /*keyframe animations*/
+  .firstLeftToRight {
+    -webkit-animation: bannermoveLeftToRight 15s linear infinite;
+       -moz-animation: bannermoveLeftToRight 15s linear infinite;
+        -ms-animation: bannermoveLeftToRight 15s linear infinite;
+         -o-animation: bannermoveLeftToRight 15s linear infinite;
+            animation: bannermoveLeftToRight 15s linear infinite;
+  }
+  
+  @keyframes bannermoveLeftToRight {
+  0% {
+    margin-left: -2500px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+  
+  }
+  
+  @-moz-keyframes bannermoveLeftToRight {
+    0% {
+        margin-left: -2500px;
+      }
+      100% {
+        margin-left: 0px;
+      }
+  
+  }
+  
+  @-webkit-keyframes bannermoveLeftToRight {
+    0% {
+        margin-left: -2500px;
+      }
+      100% {
+        margin-left: 0px;
+      }
+  
+  }
+  
+  @-ms-keyframes bannermoveLeftToRight {
+    0% {
+        margin-left: -2500px;
+      }
+      100% {
+        margin-left: 0px;
+      }
+  
+  }
+  
+  @-o-keyframes bannermoveLeftToRight {
+    0% {
+        margin-left: -2500px;
+      }
+      100% {
+        margin-left: 0px;
+      }
+  }
+
+
+  /*keyframe animations*/
+  .firstRightToLeft {
+    -webkit-animation: bannermoveRightToLeft 15s linear infinite;
+       -moz-animation: bannermoveRightToLeft 15s linear infinite;
+        -ms-animation: bannermoveRightToLeft 15s linear infinite;
+         -o-animation: bannermoveRightToLeft 15s linear infinite;
+            animation: bannermoveRightToLeft 15s linear infinite;
+  }
+  
+  @keyframes bannermoveRightToLeft {
+  0% {
+    margin-left: -0px;
+  }
+  100% {
+    margin-left: -2500px;
+  }
+  
+  }
+  
+  @-moz-keyframes bannermoveRightToLeft {
+    0% {
+        margin-left: -0px;
+      }
+      100% {
+        margin-left: -2500px;
+      }
+  
+  }
+  
+  @-webkit-keyframes bannermoveRightToLeft {
+    0% {
+        margin-left: -0px;
+      }
+      100% {
+        margin-left: -2500px;
+      }
+  
+  }
+  
+  @-ms-keyframes bannermoveRightToLeft {
+    0% {
+        margin-left: -0px;
+      }
+      100% {
+        margin-left: -2500px;
+      }
+  
+  }
+  
+  @-o-keyframes bannermoveRightToLeft {
+    0% {
+        margin-left: -0px;
+      }
+      100% {
+        margin-left: -2500px;
+      }
+  }

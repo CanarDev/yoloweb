@@ -16,19 +16,21 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.text-shadow-title{
+  text-shadow:1px 1px 2px rgb(0, 0, 0);
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* MOUSE SCROLL VERS LE HAUT */
+@-webkit-keyframes mouse-scroll-up {
+  0% {
+    top: 30%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    opacity: 0;
   }
 }
 
@@ -64,3 +66,130 @@ body {
   transform: scale(1); 
 }
 
+@-moz-keyframes mouse-scroll-up {
+  0% {
+    top: 30%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    opacity: 0;
+  }
+}
+@-o-keyframes mouse-scroll-up {
+  0% {
+    top: 30%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    opacity: 0;
+  }
+}
+@keyframes mouse-scroll-up {
+  0% {
+    top: 30%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 10%;
+    opacity: 0;
+  }
+}
+/* MOUSE SCROLL CLASSIQUE */
+@-webkit-keyframes mouse-scroll {
+  0% {
+    top: 10%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 30%;
+    opacity: 0;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+    top: 10%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 30%;
+    opacity: 0;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+    top: 10%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 30%;
+    opacity: 0;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    top: 10%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 30%;
+    opacity: 0;
+  }
+}
+
+.scroll-msg-inner {
+  width: 34px;
+  height: 68px;
+  position: relative;
+  border-radius: 34px;
+}
+
+.scroll-msg-wheel {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 50%;
+  -webkit-animation: mouse-scroll 0.9s infinite;
+  -moz-animation: mouse-scroll 0.9s infinite;
+  -o-animation: mouse-scroll 0.9s infinite;
+  animation: mouse-scroll 0.9s infinite;
+}
+
+.scroll-up-msg-wheel {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 50%;
+  -webkit-animation: mouse-scroll-up 0.9s infinite;
+  -moz-animation: mouse-scroll-up 0.9s infinite;
+  -o-animation: mouse-scroll-up 0.9s infinite;
+  animation: mouse-scroll-up 0.9s infinite;
+}
